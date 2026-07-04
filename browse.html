@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Browse</title>
+
+    <link rel="stylesheet" href="css/browse.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<section class="hero-banner">
+
+    <div class="hero-content">
+
+        <h1 id="heroTitle">Featured Movie</h1>
+
+        <p id="heroOverview">
+            Loading featured movie...
+        </p>
+
+        <button id="watchTrailer">
+            ▶ Watch Trailer
+        </button>
+
+    </div>
+
+</section>
+
+<header>
+
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+    <div class="logo">
+        NETFLIX
+    </div>
+
+    <div class="search-box">
+        <input
+        type="text"
+        id="search"
+        placeholder="Search movies...">
+    </div>
+
+    <div class="profile">
+        <img src="https://via.placeholder.com/40/FFFFFF/000000?text=U" alt="User">
+    </div>
+
+</header>
+
+<main>
+
+<h2>Popular Movies</h2>
+<div id="popular" class="movie-grid"></div>
+
+<h2>Top Rated</h2>
+<div id="topRated" class="movie-grid"></div>
+
+<h2>Upcoming Movies</h2>
+<div id="upcoming" class="movie-grid"></div>
+
+</main>
+
+<!-- Profile dropdown removed -->
+
+<div id="movieModal" class="modal">
+
+<div class="modal-content">
+
+<span id="close">&times;</span>
+
+<img id="modalImage">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalDate"></p>
+
+<p id="modalRating"></p>
+
+<p id="modalOverview"></p>
+
+<button id="watchlistBtn">
+
+Add to Watchlist
+</button>
+
+</div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/browse.js"></script>
+
+</body>
+</html>
